@@ -32,7 +32,7 @@ function App() {
    return (
       <section className="bg-slate-600 text-white text-center overflow-hidden">
          <header className="fixed w-full bg-blue-500">
-            <section className="flex p-3 gap-[175px] items-center sm:justify-between sm:mx-3 sm:gap-0 ">
+            <section className="flex p-3  items-center justify-between sm:mx-3 sm:gap-0 ">
                <h2 className="font-bold">Fabrizio.P</h2>
                <section className="relative ">
                   <button
@@ -47,16 +47,16 @@ function App() {
                      }`}
                   >
                      <ul className="flex flex-col sm:flex-row gap-4 ">
-                        <li className="transition-colors hover:bg-slate-600 hover:text-blue-500">
+                        <li className="transition-colors sm:px-2 sm:py-1 hover:bg-slate-600 hover:text-blue-500">
                            <a href="#home">Home</a>
                         </li>
-                        <li className="transition-colors hover:bg-slate-600 hover:text-blue-500">
+                        <li className="transition-colors sm:px-2 sm:py-1 hover:bg-slate-600 hover:text-blue-500">
                            <a href="#skills">Habilidades</a>
                         </li>
-                        <li className="transition-colors hover:bg-slate-600 hover:text-blue-500">
+                        <li className="transition-colors sm:px-2 sm:py-1 hover:bg-slate-600 hover:text-blue-500">
                            <a href="#projects">Proyectos</a>
                         </li>
-                        <li className="transition-colors hover:bg-slate-600 hover:text-blue-500">
+                        <li className="transition-colors sm:px-2 sm:py-1 hover:bg-slate-600 hover:text-blue-500">
                            <a href="#contact">Contactame</a>
                         </li>
                      </ul>
@@ -150,7 +150,7 @@ function App() {
                      clickable: true,
                   }}
                   modules={[Pagination]}
-                  className="mySwiper m-4 p-2  hover:text-blue-500 sm:max-w-[300px] sm:mx-auto"
+                  className="mySwiper m-4 p-2 transition-colors sm:hover:bg-slate-800  hover:text-blue-500 sm:max-w-[300px] sm:mx-auto"
                >
                   <SwiperSlide>
                      <img
@@ -406,7 +406,7 @@ function App() {
                <a
                   href="https://github.com/FabrizioPC"
                   target="_blank"
-                  className="h-[25px] aspect-square"
+                  className="h-[25px] aspect-square m-1"
                >
                   <img
                      className="h-full w-full object-contain"
