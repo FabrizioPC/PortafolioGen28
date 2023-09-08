@@ -4,12 +4,34 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 function App() {
    const [isShowNav, setIsShowNav] = useState(false);
+
+   const sendEmail = (e) => {
+      e.preventDefault();
+
+      emailjs
+         .sendForm(
+            "service_3fzvkk7",
+            "template_14k7s1v",
+            e.target,
+            "oM56IStOgd3Carj8g"
+         )
+         .then(
+            (result) => {
+               console.log(result.text);
+               e.target.reset();
+            },
+            (error) => {
+               console.log(error.text);
+            }
+         );
+   };
    return (
       <section className="bg-slate-600 text-white text-center overflow-hidden">
-         <header className="fixed w-full bg-slate-600">
+         <header className="fixed w-full bg-blue-500">
             <section className="flex p-3 gap-[175px] items-center sm:justify-between sm:mx-3 sm:gap-0 ">
                <h2 className="font-bold">Fabrizio.P</h2>
                <section className="relative ">
@@ -20,21 +42,21 @@ function App() {
                      <img src="/images/icons/HamburgerIcon.png" alt="" />
                   </button>
                   <div
-                     className={`absolute  sm:static  w-[170px] sm:w-full top-12 sm:top-0  bg-slate-400 sm:bg-inherit p-5 sm:p-0 gap-2 rounded-lg transition-[right] ${
+                     className={`absolute  sm:static  w-[170px] sm:w-full top-12 sm:top-0  bg-blue-500 sm:bg-inherit p-5 sm:p-0 gap-2  transition-[right] ${
                         isShowNav ? "-right-0" : "-right-[300px]"
                      }`}
                   >
-                     <ul className="flex flex-col sm:flex-row gap-4  ">
-                        <li className="hover:bg-slate-600 hover:text-blue-500">
+                     <ul className="flex flex-col sm:flex-row gap-4 ">
+                        <li className="transition-colors hover:bg-slate-600 hover:text-blue-500">
                            <a href="#home">Home</a>
                         </li>
-                        <li className="hover:bg-slate-600 hover:text-blue-500">
+                        <li className="transition-colors hover:bg-slate-600 hover:text-blue-500">
                            <a href="#skills">Habilidades</a>
                         </li>
-                        <li className="hover:bg-slate-600 hover:text-blue-500">
+                        <li className="transition-colors hover:bg-slate-600 hover:text-blue-500">
                            <a href="#projects">Proyectos</a>
                         </li>
-                        <li className="hover:bg-slate-600 hover:text-blue-500">
+                        <li className="transition-colors hover:bg-slate-600 hover:text-blue-500">
                            <a href="#contact">Contactame</a>
                         </li>
                      </ul>
@@ -69,7 +91,7 @@ function App() {
          <section id="skills" className="m-4">
             <h2 className="text-xl font-semibold">Habilidades:</h2>
             <article className="flex flex-col justify-center sm:flex-row mt-4 mb-4 sm:flex-wrap gap-4 ">
-               <section className=" flex items-center justify-center gap-[5.75rem] sm:p-4 rounded-[10px] border-2 border-slate-200 h-[80px] hover:border-blue-500">
+               <section className="bg-blue-600  flex items-center justify-center gap-[5.75rem] sm:p-4 rounded-[10px] border-2 transition-colors border-slate-200 h-[80px] hover:border-orange-400">
                   <div className=" h-[65px] aspect-square">
                      <img
                         className="h-full w-full object-cover"
@@ -81,7 +103,7 @@ function App() {
                      <h3 className="text-xl font-semibold">React</h3>
                   </div>
                </section>
-               <section className=" flex items-center justify-center  gap-[3.75rem] sm:p-4 rounded-[10px] border-2 border-slate-200 h-[80px] hover:border-blue-500">
+               <section className="bg-blue-600  flex items-center justify-center  gap-[3.75rem] sm:p-4 rounded-[10px] border-2 transition-colors border-slate-200 h-[80px] hover:border-orange-400">
                   <div className=" h-[65px] aspect-square">
                      <img
                         className="h-full w-full object-contain"
@@ -93,7 +115,7 @@ function App() {
                      <h3 className="text-xl font-semibold">Javascript</h3>
                   </div>
                </section>
-               <section className=" flex items-center justify-center  gap-[4.75rem] sm:p-4 rounded-[10px] border-2 border-slate-200 h-[80px] hover:border-blue-500">
+               <section className="bg-blue-600  flex items-center justify-center  gap-[4.75rem] sm:p-4 rounded-[10px] border-2 transition-colors border-slate-200 h-[80px] hover:border-orange-400">
                   <div className=" h-[65px] aspect-square">
                      <img
                         className="h-full w-full object-contain"
@@ -105,7 +127,7 @@ function App() {
                      <h3 className="text-xl font-semibold">Github</h3>
                   </div>
                </section>
-               <section className=" flex items-center justify-center  gap-[4.75rem] sm:p-4 rounded-[10px] border-2 border-slate-200 h-[80px] hover:border-blue-500">
+               <section className="bg-blue-600  flex items-center justify-center  gap-[4.75rem] sm:p-4 rounded-[10px] border-2 transition-colors border-slate-200 h-[80px] hover:border-orange-400">
                   <div className=" h-[65px] aspect-square">
                      <img
                         className="h-full w-full object-contain"
@@ -119,7 +141,7 @@ function App() {
                </section>
             </article>
          </section>
-         <section id="projects">
+         <section id="projects" className=" m-4">
             <h2 className="text-xl font-semibold m-2">Proyectos:</h2>
             <div className="galeria">
                <Swiper
@@ -351,8 +373,49 @@ function App() {
                </Swiper>
             </div>
          </section>
-         <section id="contact">Contact:</section>
-         <footer></footer>
+         <section id="contact" className=" bg-blue-500 ">
+            <h2 className="text-xl font-semibold p-2">Contactame:</h2>
+            <form
+               onSubmit={sendEmail}
+               className="m-2 flex flex-col sm:flex-row sm:gap-4 justify-center items-center"
+            >
+               <label className="text-ls font-semibold">Tu nombre:</label>
+               <input
+                  className="bg-blue-600 w-[150px]"
+                  type="text"
+                  name="user_name"
+               />
+               <label className="text-ls font-semibold">Tu email:</label>
+               <input
+                  className="bg-blue-600 w-[150px]"
+                  type="email"
+                  name="user_email"
+               />
+               <label className="text-ls font-semibold">Mensaje:</label>
+               <textarea
+                  className="bg-blue-600 w-[150px] sm:w-[300px]"
+                  name="message"
+               />
+               <input
+                  type="submit"
+                  className="cursor-pointer bg-[#fe9143] hover:bg-[#b86931] p-2 w-[100px] my-4 rounded-full"
+                  value="Enviar"
+               />
+            </form>
+            <section className="  flex justify-center items-center">
+               <a
+                  href="https://github.com/FabrizioPC"
+                  target="_blank"
+                  className="h-[25px] aspect-square"
+               >
+                  <img
+                     className="h-full w-full object-contain"
+                     src="/images/icons/githubLogo.png"
+                     alt=""
+                  />
+               </a>
+            </section>
+         </section>
       </section>
    );
 }
