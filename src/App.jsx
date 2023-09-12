@@ -377,7 +377,7 @@ function App() {
             <h2 className="text-xl font-semibold p-2">Contactame:</h2>
             <form
                onSubmit={sendEmail}
-               className="m-2 flex flex-col sm:flex-row sm:gap-4 justify-center items-center"
+               className="m-2 flex flex-col sm:gap-4 justify-center items-center"
             >
                <label className="text-ls font-semibold">Tu nombre:</label>
                <input
