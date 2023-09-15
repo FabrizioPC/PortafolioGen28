@@ -51,19 +51,60 @@ const Contact = () => {
                value="Enviar"
             />
          </form>
-         <section className="  flex justify-center items-center">
-            <a
-               href="https://github.com/FabrizioPC"
-               target="_blank"
-               className="h-[25px] aspect-square m-1"
-            >
-               <img
-                  className="h-full w-full object-contain"
-                  src="/images/icons/githubLogo.png"
-                  alt=""
-               />
-            </a>
-         </section>
+         <div className="flex justify-center gap-2">
+            <article className="  flex justify-center items-center">
+               <a
+                  href="https://github.com/FabrizioPC"
+                  target="_blank"
+                  className="h-[25px] aspect-square m-1"
+               >
+                  <img
+                     className="h-full w-full object-contain"
+                     src="/images/icons/githubLogo.png"
+                     alt=""
+                  />
+               </a>
+            </article>
+            <article className="  flex justify-center items-center">
+               <a
+                  href="https://www.linkedin.com/in/fabrizio-pino-cayatopa/"
+                  target="_blank"
+                  className="h-[25px] aspect-square m-1"
+               >
+                  <img
+                     className="h-full w-full object-contain"
+                     src="/images/icons/linkedinLogo.png"
+                     alt=""
+                  />
+               </a>
+            </article>
+            <article className="flex justify-center items-center">
+               <a
+                  href="mailto:fabrizioxz1@gmail.com"
+                  target="_blank"
+                  className="h-[25px] aspect-square m-1"
+               >
+                  <img
+                     className="h-full w-full object-contain"
+                     src="/images/icons/emailLogo.png"
+                     alt=""
+                  />
+               </a>
+            </article>
+            <article className="flex justify-center items-center">
+               <a
+                  href="https://wa.me/+51922406372"
+                  target="_blank"
+                  className="h-[25px] aspect-square m-1"
+               >
+                  <img
+                     className="h-full w-full object-contain"
+                     src="/images/icons/whatsappLogo.png"
+                     alt=""
+                  />
+               </a>
+            </article>
+         </div>
       </section>
    );
 };
