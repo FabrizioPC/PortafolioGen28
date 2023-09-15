@@ -6,8 +6,8 @@ const Home = () => {
          id="home"
          className="flex flex-col justify-center items-center mx-auto mt-20"
       >
-         <h1 className="text-4xl font-semibold">Fabrizio Pino</h1>
-         <h2 className="text-2xl font-semibold text-blue-500">
+         <h1 className="text-4xl font-semibold m-2">Fabrizio Pino</h1>
+         <h2 className="text-2xl font-semibold text-blue-500 m-2">
             Desarrollador Web Full Stack
          </h2>
          <section className="flex">
