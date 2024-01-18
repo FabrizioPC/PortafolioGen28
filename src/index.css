@@ -1,3 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+
+   @apply transition-colors duration-150;
+}
+@layer base {
+   :root {
+      --color-bkg: 0deg 0% 100%;
+      --color-content: 212deg 81% 86%;
+      --color-content2: 212deg 26% 29%;
+      --color-content3: 51deg 100% 48%;
+      --color-buttons: 51deg 100% 48%;
+      --color-text: 212deg 26% 29%;
+   }
+   :root[class="dark"] {
+      --color-bkg: 212deg 26% 29%;
+      --color-content: 212deg 26% 29%;
+      --color-content2: 0deg 63% 53%;
+      --color-content3: 51deg 100% 48%;
+      --color-buttons: 0deg 63% 53%;
+      --color-text: 51deg 100% 48%;
+
+      --color-Res: 51deg 100% 48%;
+      --color-Res2: 0deg 63% 53%;
+      --color-Res3: 212deg 81% 86%;
+      --color-Res4: 212deg 26% 29%;
+   }
+}

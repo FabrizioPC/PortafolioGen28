@@ -1,7 +1,5 @@
-import "./App.css";
-
 import Header from "./components/Header";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Home from "./components/Home";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
@@ -9,17 +7,38 @@ import Contact from "./components/Contact";
 
 function App() {
    const [isShowHeader, setIsShowHeader] = useState(false);
+   const [theme, setTheme] = useState(() => {
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+         return "dark";
+      }
+      return "light";
+   });
+
+   useEffect(() => {
+      if (theme === "dark") {
+         document.querySelector("html").classList.add("dark");
+      } else {
+         document.querySelector("html").classList.remove("dark");
+      }
+   }, [theme]);
+
+   const handleChangeTheme = () => {
+      setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+   };
 
    return (
-      <section className="bg-slate-600 text-white text-center overflow-hidden">
+      <section className="text-center overflow-hidden bg-content-1 dark:bg-bkg font-Roboto">
          <Header
             isShowHeader={isShowHeader}
             setIsShowHeader={setIsShowHeader}
+            handleChangeTheme={handleChangeTheme}
          />
-         <Home />
-         <Skills />
-         <Projects />
-         <Contact />
+         <section>
+            <Home />
+            <Skills />
+            <Projects />
+            <Contact />
+         </section>
       </section>
    );
 }
