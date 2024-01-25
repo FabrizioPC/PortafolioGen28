@@ -8,7 +8,7 @@
    padding: 0px;
    box-sizing: border-box;
 
-   @apply transition-colors duration-150;
+   @apply transition-colors duration-100;
 }
 @layer base {
    :root {

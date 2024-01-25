@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = ({ isShowHeader, setIsShowHeader, handleChangeTheme }) => {
    return (
-      <header className="fixed right-0 h-full w-20 sm:h-auto sm:w-full sm:bg-content-1 sm:shadow-md">
+      <header className="fixed z-50 right-0 h-full w-20 sm:h-auto sm:w-full sm:bg-content-1 sm:shadow-md">
          <section className="flex text-textColor sm:flex-row sm:p-4 items-center justify-between sm:mx-3 sm:gap-0 ">
             <h2 className="font-extrabold  hidden sm:text-4xl sm:flex">FP</h2>
 
@@ -10,19 +10,45 @@ const Header = ({ isShowHeader, setIsShowHeader, handleChangeTheme }) => {
                {/* //!Boton Hamburguesa */}
                <button
                   onClick={() => setIsShowHeader(!isShowHeader)}
-                  className="w-[50px] sm:hidden"
+                  className="relative z-10 w-[50px] right-4 mt-2 sm:mt-0 sm:hidden text-buttons"
                >
-                  <img src="/images/icons/HamburgerIcon.png" alt="" />
+                  <svg
+                     class="w-10"
+                     aria-hidden="true"
+                     xmlns="http://www.w3.org/2000/svg"
+                     fill="currentColor"
+                     viewBox="0 0 17 14"
+                  >
+                     <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15"
+                     />
+                  </svg>
                </button>
-
+               {/* //! Menu Desplegable */}
                <div
-                  className={`fixed  backdrop-blur-2xl sm:static  w-[170px] bottom-0 sm:w-full top-11 sm:top-0   sm:bg-inherit p-5 sm:p-0 gap-2  transition-[right] ${
+                  className={`fixed  backdrop-blur-2xl sm:static  w-[170px] bottom-0 sm:w-full top-0 sm:top-0   sm:bg-inherit p-5 sm:p-0 gap-2  transition-[right] ${
                      isShowHeader ? "-right-3" : "-right-[300px]"
                   }`}
                >
-                  <ul className="flex flex-col h-full  sm:flex-row gap-8 sm:gap-4 ">
+                  <ul className="flex flex-col h-full mt-10 sm:mt-0  sm:flex-row gap-8 sm:gap-4 ">
+                     <li className="transition-colors sm:p-2 dark:text-content-3 hover:text-bkg">
+                        <a href="#home">Home</a>
+                     </li>
+                     <li className="transition-colors  sm:p-2 dark:text-content-3 hover:text-bkg">
+                        <a href="#skills">Habilidades</a>
+                     </li>
+                     <li className="transition-colors  sm:p-2 dark:text-content-3 hover:text-bkg">
+                        <a href="#projects">Proyectos</a>
+                     </li>
+                     <li className="transition-colors  sm:p-2 dark:text-content-3 hover:text-bkg">
+                        <a href="#contact">Contactame</a>
+                     </li>
+                     {/* //!Day/Light */}
                      <li>
-                        {/* //!Day/Light */}
                         <button
                            className="p-2 hover:text-bkg dark:hover:text-black dark:text-content-3"
                            onClick={handleChangeTheme}
@@ -43,18 +69,6 @@ const Header = ({ isShowHeader, setIsShowHeader, handleChangeTheme }) => {
                               />
                            </svg>
                         </button>
-                     </li>
-                     <li className="transition-colors sm:p-2 dark:text-content-3 hover:text-bkg">
-                        <a href="#home">Home</a>
-                     </li>
-                     <li className="transition-colors  sm:p-2 dark:text-content-3 hover:text-bkg">
-                        <a href="#skills">Habilidades</a>
-                     </li>
-                     <li className="transition-colors  sm:p-2 dark:text-content-3 hover:text-bkg">
-                        <a href="#projects">Proyectos</a>
-                     </li>
-                     <li className="transition-colors  sm:p-2 dark:text-content-3 hover:text-bkg">
-                        <a href="#contact">Contactame</a>
                      </li>
                   </ul>
                </div>

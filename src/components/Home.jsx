@@ -7,7 +7,7 @@ const Home = () => {
          className=" flex flex-col justify-center mt-20 items-center mx-auto w-[90%] text-textColor"
       >
          <h1 className="text-4xl font-extrabold m-2">Fabrizio Pino</h1>
-         <h2 className="text-2xl font-semibold text-bkg dark:text-content-2">
+         <h2 className="text-2xl font-semibold text-buttons  ">
             Desarrollador Web Full-Stack
          </h2>
          <section className="logos flex gap-2">
@@ -56,17 +56,18 @@ const Home = () => {
                   </svg>
                </a>
             </article>
-            <article className="flex flex-col items-center">
+            <article className="flex flex-col items-center ">
                <a
                   href="mailto:fabrizioxz1@gmail.com"
                   target="_blank"
-                  className="h-[28px] aspect-square m-1 text-gray-800 dark:text-white"
+                  className="h-[28px] aspect-square m-1 "
                   title="Enviar email"
                >
                   <svg
                      viewBox="0 0 24 24"
                      fill="none"
                      xmlns="http://www.w3.org/2000/svg"
+                     className="text-gray-800 dark:text-white"
                   >
                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                      <g

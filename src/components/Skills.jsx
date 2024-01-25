@@ -4,9 +4,9 @@ const Skills = () => {
    return (
       <section id="skills" className="m-4 text-textColor mx-auto w-[80%]">
          <h2 className="text-3xl font-bold">Habilidades:</h2>
-         <article className="flex flex-col justify-center sm:flex-row mt-5 sm:flex-wrap gap-3">
-            <section className="gap-[20%] sm:gap-2 group bg-buttons mx-auto flex items-center w-[90%] sm:w-[250px] justify-center   sm:p-4 rounded-[10px] border-2 border-transparent h-[80px] hover:border-bkg">
-               <div className="sm:mx-auto sm:m-5 h-[65px] aspect-square  group-hover:text-[#E44D26]">
+         <article className=" flex flex-col justify-center sm:flex-row m-5 sm:flex-wrap gap-x-10 gap-y-4">
+            <section className="gap-[20%] sm:gap-2 group bg-buttons  flex items-center w-[90%] sm:w-[250px] justify-center   sm:p-4 rounded-[10px] border-2 border-transparent h-[80px] hover:border-bkg">
+               <div className="sm:mx-auto sm:m-5 h-[65px] aspect-square dark:text-white group-hover:text-[#E44D26] dark:group-hover:text-[#000000]">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      x="0px"
@@ -15,7 +15,6 @@ const Skills = () => {
                      height="auto"
                      viewBox="0 0 50 50"
                      fill="currentColor"
-                     className="dark:text-white"
                   >
                      <path d="M 45.273438 2.324219 C 45.085938 2.117188 44.816406 2 44.535156 2 L 5.464844 2 C 5.183594 2 4.914063 2.117188 4.726563 2.324219 C 4.535156 2.53125 4.441406 2.808594 4.46875 3.089844 L 7.988281 42.515625 C 8.023438 42.929688 8.3125 43.273438 8.710938 43.390625 L 24.722656 47.960938 C 24.808594 47.988281 24.902344 48 24.996094 48 C 25.089844 48 25.179688 47.988281 25.269531 47.960938 L 41.292969 43.390625 C 41.691406 43.273438 41.976563 42.929688 42.015625 42.515625 L 45.53125 3.089844 C 45.558594 2.808594 45.464844 2.53125 45.273438 2.324219 Z M 36.847656 15.917969 L 18.035156 15.917969 L 18.484375 21.007813 L 36.394531 21.007813 L 35.050781 36.050781 L 24.992188 39.089844 L 24.894531 39.058594 L 14.953125 36.046875 L 14.410156 29.917969 L 19.28125 29.917969 L 19.492188 32.296875 L 25.050781 33.460938 L 30.507813 32.296875 L 31.089844 25.859375 L 14.046875 25.859375 L 12.722656 11.054688 L 37.28125 11.054688 Z"></path>
                   </svg>
@@ -25,10 +24,9 @@ const Skills = () => {
                </div>
             </section>
 
-            <section className="gap-[28%]  group bg-buttons mx-auto flex items-center w-[90%] sm:w-[250px] justify-center  sm:p-4 rounded-[10px] border-2 border-transparent h-[80px] hover:border-bkg">
-               <div className="sm:mx-auto sm:m-5 h-[65px] aspect-square  group-hover:text-[#2D67D4]">
+            <section className="gap-[28%]  group bg-buttons  flex items-center w-[90%] sm:w-[250px] justify-center  sm:p-4 rounded-[10px] border-2 border-transparent h-[80px] hover:border-bkg">
+               <div className="sm:mx-auto sm:m-5 h-[65px] aspect-square dark:text-white  group-hover:text-[#2D67D4]">
                   <svg
-                     class=" dark:text-white"
                      aria-hidden="true"
                      xmlns="http://www.w3.org/2000/svg"
                      fill="currentColor"
@@ -42,7 +40,7 @@ const Skills = () => {
                </div>
             </section>
 
-            <section className="gap-[10%] sm:gap-2 group bg-buttons mx-auto flex items-center w-[90%] sm:w-[250px] justify-center sm:p-4 rounded-[10px] border-2 border-transparent h-[80px] hover:border-bkg">
+            <section className="gap-[10%] sm:gap-2 group bg-buttons  flex items-center w-[90%] sm:w-[250px] justify-center sm:p-4 rounded-[10px] border-2 border-transparent h-[80px] hover:border-bkg">
                <div className="sm:mx-auto sm:m-5 h-[65px] aspect-square m-2 dark:text-white group-hover:bg-content-3">
                   <svg
                      className=""
@@ -62,10 +60,10 @@ const Skills = () => {
                </div>
             </section>
 
-            <section className="gap-[23%] sm:gap-[15%] group bg-buttons mx-auto flex items-center w-[90%] sm:w-[250px] justify-center sm:p-4 rounded-[10px] border-2 border-transparent h-[80px] hover:border-bkg">
-               <div className="sm:mx-auto sm:m-5 h-[65px] aspect-square group-hover:text-[#1A6DFF]">
+            <section className="gap-[23%] sm:gap-[15%] group bg-buttons  flex items-center w-[90%] sm:w-[250px] justify-center sm:p-4 rounded-[10px] border-2 border-transparent h-[80px] hover:border-bkg">
+               <div className="sm:mx-auto sm:m-5 h-[65px] aspect-square dark:text-white group-hover:text-[#1A6DFF]">
                   <svg
-                     class="h-auto dark:text-white"
+                     class="h-auto"
                      aria-hidden="true"
                      xmlns="http://www.w3.org/2000/svg"
                      fill="currentColor"
@@ -80,10 +78,10 @@ const Skills = () => {
                </div>
             </section>
 
-            <section className="gap-[13%] sm:gap-[15%]  group bg-buttons mx-auto flex items-center w-[90%] sm:w-[250px] justify-center sm:p-4 rounded-[10px] border-2 border-transparent h-[80px] hover:border-bkg">
-               <div className="sm:mx-auto sm:m-5 h-[65px] aspect-square m-5 group-hover:text-black">
+            <section className="gap-[13%] sm:gap-[15%]  group bg-buttons  flex items-center w-[90%] sm:w-[250px] justify-center sm:p-4 rounded-[10px] border-2 border-transparent h-[80px] hover:border-bkg">
+               <div className="sm:mx-auto sm:m-5 h-[65px] aspect-square m-5 dark:text-white group-hover:text-black">
                   <svg
-                     class="w-auto h-auto  dark:text-white"
+                     class="w-auto h-auto  "
                      aria-hidden="true"
                      xmlns="http://www.w3.org/2000/svg"
                      fill="currentColor"
@@ -100,7 +98,7 @@ const Skills = () => {
                   <h3 className="p-3 sm:p-0 text-2xl font-semibold">Github</h3>
                </div>
             </section>
-            <section className="gap-[21%]  group bg-buttons mx-auto flex items-center w-[90%] sm:w-[250px] justify-center sm:p-4 rounded-[10px] border-2 border-transparent h-[80px] hover:border-bkg">
+            <section className="gap-[21%]  group bg-buttons  flex items-center w-[90%] sm:w-[250px] justify-center sm:p-4 rounded-[10px] border-2 border-transparent h-[80px] hover:border-bkg">
                <div className="sm:mx-auto sm:m-5 h-[65px] aspect-square dark:text-white group-hover:text-[#6C4EB0]">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
@@ -118,7 +116,7 @@ const Skills = () => {
                   <h3 className="sm:p-0 text-2xl font-semibold">Redux</h3>
                </div>
             </section>
-            <section className="gap-[0%] sm:gap-3 group bg-buttons mx-auto flex items-center w-[90%] sm:w-[250px] justify-center sm:p-4 rounded-[10px] border-2 border-transparent h-[80px] hover:border-bkg ">
+            <section className="gap-[0%] sm:gap-3 group bg-buttons  flex items-center w-[90%] sm:w-[250px] justify-center sm:p-4 rounded-[10px] border-2 border-transparent h-[80px] hover:border-bkg ">
                <div className="sm:mx-auto sm:m-5 h-[65px] aspect-square mx-[10%] dark:text-white group-hover:text-[#21A366]">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +134,7 @@ const Skills = () => {
                   <h3 className="p-6 sm:p-0 text-2xl font-semibold">Node.js</h3>
                </div>
             </section>
-            <section className="gap-[8%] sm:gap-[0%] group bg-buttons mx-auto flex items-center w-[90%] sm:w-[250px] justify-center sm:p-4 rounded-[10px] border-2 border-transparent h-[80px] hover:border-bkg ">
+            <section className="gap-[8%] sm:gap-[0%] group bg-buttons  flex items-center w-[90%] sm:w-[250px] justify-center sm:p-4 rounded-[10px] border-2 border-transparent h-[80px] hover:border-bkg ">
                <div className="sm:mx-auto sm:m-5 h-[65px] aspect-square dark:text-white group-hover:text-[#0277BD]">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
