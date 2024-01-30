@@ -12,24 +12,26 @@
 }
 @layer base {
    :root {
-      --color-bkg: 0deg 0% 100%;
-      --color-content: 212deg 81% 86%;
-      --color-content2: 212deg 26% 29%;
-      --color-content3: 51deg 100% 48%;
-      --color-buttons: 51deg 100% 48%;
-      --color-text: 212deg 26% 29%;
+      --color-bkg: 179deg 75% 49%;
+      --color-content: 196deg 74% 49%;
+      --color-content2: 198deg 74% 32%;
+      --color-content3: 198deg 74% 32%;
+      --color-buttons: 198deg 74% 32%;
+      --color-text: 262deg 28% 8%;
+
+      --color-Res: 262deg 28% 8%;
+      --color-Res2: 203deg 63% 19%;
+      --color-Res3: 198deg 74% 32%;
+      --color-Res4: 196deg 74% 49%;
+      --color-Res5: 179deg 75% 49%;
+      --color-Res6: 212deg 26% 29%;
    }
    :root[class="dark"] {
-      --color-bkg: 212deg 26% 29%;
-      --color-content: 212deg 26% 29%;
-      --color-content2: 0deg 63% 53%;
-      --color-content3: 51deg 100% 48%;
-      --color-buttons: 0deg 63% 53%;
-      --color-text: 51deg 100% 48%;
-
-      --color-Res: 51deg 100% 48%;
-      --color-Res2: 0deg 63% 53%;
-      --color-Res3: 212deg 81% 86%;
-      --color-Res4: 212deg 26% 29%;
+      --color-bkg: 262deg 28% 8%;
+      --color-content: 203deg 63% 19%;
+      --color-content2: 203deg 63% 19%;
+      --color-content3: 179deg 75% 49%;
+      --color-buttons: 196deg 74% 28%;
+      --color-text: 198deg 0% 100%;
    }
 }

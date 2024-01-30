@@ -27,7 +27,7 @@ function App() {
    };
 
    return (
-      <section className="text-center overflow-hidden bg-content-1 dark:bg-bkg font-Roboto">
+      <section className="text-center overflow-hidden bg-gradient-to-b via-content-1 to-content-3 from-bkg dark:bg-gradient-to-b dark:from-bkg dark:via-content-1 dark:to-content-3 font-Roboto">
          <Header
             isShowHeader={isShowHeader}
             setIsShowHeader={setIsShowHeader}

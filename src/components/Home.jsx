@@ -7,7 +7,7 @@ const Home = () => {
          className=" flex flex-col justify-center mt-20 items-center mx-auto w-[90%] text-textColor"
       >
          <h1 className="text-4xl font-extrabold m-2">Fabrizio Pino</h1>
-         <h2 className="text-2xl font-semibold text-buttons  ">
+         <h2 className="text-2xl font-semibold text-white dark:text-content-3 ">
             Desarrollador Web Full-Stack
          </h2>
          <section className="logos flex gap-2">
@@ -110,9 +110,11 @@ const Home = () => {
          </section>
          <section className="m-5 w-[60%] border rounded-xl sm:m-2 sm:border-none">
             <p className="font-medium text-lg sm:m-2">
-               Aprendiendo las diferentes librerias y lenguajes como React y
-               Node.js para realizar el desarrollo de paginas web tanto
-               Front-End como Back-End.
+               Soy un apasionado desarrollador web full stack con habilidades
+               especializadas en React, Redux, y Node.js. Mi enfoque se centra
+               en la creación de experiencias web atractivas y escalables. Con
+               un sólido dominio de HTML, CSS, y JavaScript. Estoy preparado
+               para impulsar tu proyecto con eficiencia y calidad.
             </p>
          </section>
       </section>

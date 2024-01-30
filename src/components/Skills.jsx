@@ -2,8 +2,11 @@ import React from "react";
 
 const Skills = () => {
    return (
-      <section id="skills" className="m-4 text-textColor mx-auto w-[80%]">
-         <h2 className="text-3xl font-bold">Habilidades:</h2>
+      <section
+         id="skills"
+         className="m-4 text-white dark:text-textColor mx-auto w-[80%]"
+      >
+         <h2 className="text-3xl text-textColor font-bold">Habilidades:</h2>
          <article className=" flex flex-col justify-center sm:flex-row m-5 sm:flex-wrap gap-x-10 gap-y-4">
             <section className="gap-[20%] sm:gap-2 group bg-buttons  flex items-center w-[90%] sm:w-[250px] justify-center   sm:p-4 rounded-[10px] border-2 border-transparent h-[80px] hover:border-bkg">
                <div className="sm:mx-auto sm:m-5 h-[65px] aspect-square dark:text-white group-hover:text-[#E44D26] dark:group-hover:text-[#000000]">
