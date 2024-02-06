@@ -50,7 +50,7 @@ const Header = ({ isShowHeader, setIsShowHeader, handleChangeTheme }) => {
                      {/* //!Day/Light */}
                      <li>
                         <button
-                           className="p-2 hover:text-bkg dark:hover:text-black dark:text-content-3 dark:hover:text-textColor"
+                           className="p-2 hover:text-bkg  dark:text-content-3 dark:hover:text-textColor"
                            onClick={handleChangeTheme}
                         >
                            <svg
