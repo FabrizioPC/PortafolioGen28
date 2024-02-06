@@ -4,7 +4,7 @@ const Home = () => {
    return (
       <section
          id="home"
-         className=" flex flex-col justify-center mt-20 items-center mx-auto w-[90%] text-textColor"
+         className="min-h-screen flex flex-col justify-center  items-center mx-auto text-textColor "
       >
          <h1 className="text-4xl font-extrabold m-2">Fabrizio Pino</h1>
          <h2 className="text-2xl font-semibold text-white dark:text-content-3 ">
@@ -108,8 +108,8 @@ const Home = () => {
                </a>
             </article>
          </section>
-         <section className="m-5 w-[60%] border rounded-xl sm:m-2 sm:border-none">
-            <p className="font-medium text-lg sm:m-2">
+         <section className="m-5 w-[80%] border rounded-xl sm:m-2 sm:border-none">
+            <p className="font-medium text-2xl sm:m-2">
                Soy un apasionado desarrollador web full stack con habilidades
                especializadas en React, Redux, y Node.js. Mi enfoque se centra
                en la creación de experiencias web atractivas y escalables. Con

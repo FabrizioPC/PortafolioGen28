@@ -33,7 +33,7 @@ function App() {
             setIsShowHeader={setIsShowHeader}
             handleChangeTheme={handleChangeTheme}
          />
-         <section>
+         <section className="">
             <Home />
             <Skills />
             <Projects />

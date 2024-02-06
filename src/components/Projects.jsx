@@ -7,7 +7,7 @@ const Projects = () => {
    return (
       <section
          id="projects"
-         className=" m-5 w-[90%] mx-auto  pb-3 text-textColor"
+         className="m-5 w-[90%] mx-auto  pb-3 text-textColor"
       >
          <h2 className="text-3xl text-center p-3 font-semibold">
             Mis Proyectos:

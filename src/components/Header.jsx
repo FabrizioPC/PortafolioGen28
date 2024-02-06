@@ -35,22 +35,22 @@ const Header = ({ isShowHeader, setIsShowHeader, handleChangeTheme }) => {
                   }`}
                >
                   <ul className="flex flex-col h-full mt-10 sm:mt-0  sm:flex-row gap-8 sm:gap-4 ">
-                     <li className="transition-colors sm:p-2 dark:text-content-3 hover:text-bkg">
+                     <li className="transition-colors sm:p-2 dark:text-content-3 hover:text-bkg dark:hover:text-textColor">
                         <a href="#home">Home</a>
                      </li>
-                     <li className="transition-colors  sm:p-2 dark:text-content-3 hover:text-bkg">
+                     <li className="transition-colors  sm:p-2 dark:text-content-3 hover:text-bkg dark:hover:text-textColor">
                         <a href="#skills">Habilidades</a>
                      </li>
-                     <li className="transition-colors  sm:p-2 dark:text-content-3 hover:text-bkg">
+                     <li className="transition-colors  sm:p-2 dark:text-content-3 hover:text-bkg dark:hover:text-textColor">
                         <a href="#projects">Proyectos</a>
                      </li>
-                     <li className="transition-colors  sm:p-2 dark:text-content-3 hover:text-bkg">
+                     <li className="transition-colors  sm:p-2 dark:text-content-3 hover:text-bkg dark:hover:text-textColor">
                         <a href="#contact">Contactame</a>
                      </li>
                      {/* //!Day/Light */}
                      <li>
                         <button
-                           className="p-2 hover:text-bkg dark:hover:text-black dark:text-content-3"
+                           className="p-2 hover:text-bkg dark:hover:text-black dark:text-content-3 dark:hover:text-textColor"
                            onClick={handleChangeTheme}
                         >
                            <svg
